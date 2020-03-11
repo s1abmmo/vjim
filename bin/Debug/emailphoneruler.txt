@@ -1,0 +1,6 @@
+()-_.,
+#$%^&*()"
+VinaPhone,096,
+Viettel,096
+MobiPhone,065
+Other,0,84,+84
