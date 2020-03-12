@@ -22,3 +22,14 @@ F:\Project\vji\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.csp
 F:\Project\vji\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.exe
 F:\Project\vji\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.pdb
 F:\Project\vji\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.csprojAssemblyReference.cache
+F:\Project\vjim\VJInfomationManager210220\bin\Debug\VJInfomationManager210220.exe.config
+F:\Project\vjim\VJInfomationManager210220\bin\Debug\VJInfomationManager210220.exe
+F:\Project\vjim\VJInfomationManager210220\bin\Debug\VJInfomationManager210220.pdb
+F:\Project\vjim\VJInfomationManager210220\bin\Debug\MySql.Data.dll
+F:\Project\vjim\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.Form1.resources
+F:\Project\vjim\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.Properties.Resources.resources
+F:\Project\vjim\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.csproj.GenerateResource.cache
+F:\Project\vjim\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.csproj.CoreCompileInputs.cache
+F:\Project\vjim\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.csproj.CopyComplete
+F:\Project\vjim\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.exe
+F:\Project\vjim\VJInfomationManager210220\obj\Debug\VJInfomationManager210220.pdb

@@ -13,7 +13,7 @@ using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
 using System.Globalization;
 
-//Version 2.0
+//Version 2.2
 
 namespace VJInfomationManager210220
 {
@@ -714,6 +714,21 @@ namespace VJInfomationManager210220
                     {
                         VietJetInfomation vji = ListAllVJI[a];
                         if (vji.Email == null || vji.Email == "")
+                            ListAllVJI.RemoveAt(a);
+                    }
+                }
+
+                if (OnlyPhoneNetwork)
+                {
+                    Invoke((MethodInvoker)(() =>
+                    {
+                        this.button2.Text = "Chỉ lấy nhà mạng...";
+                        Application.DoEvents();
+                    }));
+                    for (int a = ListAllVJI.Count - 1; a > -1; a--)
+                    {
+                        VietJetInfomation vji = ListAllVJI[a];
+                        if (vji.PhoneNetwork != PhoneNetWork)
                             ListAllVJI.RemoveAt(a);
                     }
                 }
