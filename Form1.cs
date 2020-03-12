@@ -319,6 +319,9 @@ namespace VJInfomationManager210220
             bool OnlyPhoneLoop = checkBox53.Checked;
             int PhoneLoop = Convert.ToInt32(numericUpDown2.Value);
 
+            bool OnlyNoPhone = checkBox54.Checked;
+            bool OnlyNoEmail = checkBox55.Checked;
+
             int loop = 1;
 
             Thread t3 = new Thread(delegate ()
@@ -700,18 +703,48 @@ namespace VJInfomationManager210220
                             ListAllVJI.RemoveAt(a);
                     }
                 }
-
-                if (OnlyPhoneNetwork)
+                if (GetHaveEmail)
                 {
                     Invoke((MethodInvoker)(() =>
                     {
-                        this.button2.Text = "Chỉ lấy nhà mạng...";
+                        this.button2.Text = "Chỉ lấy có Email...";
                         Application.DoEvents();
                     }));
                     for (int a = ListAllVJI.Count - 1; a > -1; a--)
                     {
                         VietJetInfomation vji = ListAllVJI[a];
-                        if (vji.PhoneNetwork != PhoneNetWork)
+                        if (vji.Email == null || vji.Email == "")
+                            ListAllVJI.RemoveAt(a);
+                    }
+                }
+
+                if (OnlyNoEmail)
+                {
+                    Invoke((MethodInvoker)(() =>
+                    {
+                        this.button2.Text = "Không lấy có Email...";
+                        Application.DoEvents();
+                    }));
+                    for (int a = ListAllVJI.Count - 1; a > -1; a--)
+                    {
+                        VietJetInfomation vji = ListAllVJI[a];
+                        if (vji.Email == null || vji.Email == "")
+                            ListAllVJI.RemoveAt(a);
+                    }
+                }
+
+
+                if (OnlyNoPhone)
+                {
+                    Invoke((MethodInvoker)(() =>
+                    {
+                        this.button2.Text = "Không lấy có SĐT...";
+                        Application.DoEvents();
+                    }));
+                    for (int a = ListAllVJI.Count - 1; a > -1; a--)
+                    {
+                        VietJetInfomation vji = ListAllVJI[a];
+                        if (vji.Phone == null || vji.Phone == "")
                             ListAllVJI.RemoveAt(a);
                     }
                 }

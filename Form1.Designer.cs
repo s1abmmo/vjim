@@ -115,6 +115,8 @@
             this.checkBox37 = new System.Windows.Forms.CheckBox();
             this.checkBox38 = new System.Windows.Forms.CheckBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.checkBox54 = new System.Windows.Forms.CheckBox();
+            this.checkBox55 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -139,7 +141,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(873, 560);
+            this.dataGridView1.Size = new System.Drawing.Size(873, 610);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
@@ -154,6 +156,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBox54);
+            this.groupBox1.Controls.Add(this.checkBox55);
             this.groupBox1.Controls.Add(this.numericUpDown2);
             this.groupBox1.Controls.Add(this.numericUpDown1);
             this.groupBox1.Controls.Add(this.checkBox53);
@@ -391,7 +395,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(6, 487);
+            this.button2.Location = new System.Drawing.Point(6, 525);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(188, 33);
             this.button2.TabIndex = 11;
@@ -705,7 +709,7 @@
             this.tabControl1.Location = new System.Drawing.Point(497, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(223, 560);
+            this.tabControl1.Size = new System.Drawing.Size(223, 610);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -717,7 +721,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(215, 534);
+            this.tabPage1.Size = new System.Drawing.Size(215, 528);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nhập";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -748,7 +752,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(215, 534);
+            this.tabPage2.Size = new System.Drawing.Size(215, 584);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Lọc";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -760,7 +764,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(215, 534);
+            this.tabPage3.Size = new System.Drawing.Size(215, 528);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Hiển thị";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1044,16 +1048,36 @@
             this.tabPage4.Controls.Add(this.groupBox2);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(215, 534);
+            this.tabPage4.Size = new System.Drawing.Size(215, 528);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Xuất";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox54
+            // 
+            this.checkBox54.AutoSize = true;
+            this.checkBox54.Location = new System.Drawing.Point(6, 502);
+            this.checkBox54.Name = "checkBox54";
+            this.checkBox54.Size = new System.Drawing.Size(130, 17);
+            this.checkBox54.TabIndex = 32;
+            this.checkBox54.Text = "Chỉ lấy không có SĐT";
+            this.checkBox54.UseVisualStyleBackColor = true;
+            // 
+            // checkBox55
+            // 
+            this.checkBox55.AutoSize = true;
+            this.checkBox55.Location = new System.Drawing.Point(6, 476);
+            this.checkBox55.Name = "checkBox55";
+            this.checkBox55.Size = new System.Drawing.Size(132, 17);
+            this.checkBox55.TabIndex = 31;
+            this.checkBox55.Text = "Chỉ lấy không có email";
+            this.checkBox55.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 560);
+            this.ClientSize = new System.Drawing.Size(720, 610);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
@@ -1169,6 +1193,8 @@
         private System.Windows.Forms.CheckBox checkBox53;
         private System.Windows.Forms.CheckBox checkBox52;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.CheckBox checkBox54;
+        private System.Windows.Forms.CheckBox checkBox55;
     }
 }
 
